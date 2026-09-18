@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Em 💕</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="fireworksCanvas"></canvas>
+    <div id="hearts"></div>
+
+    <div class="main-container">
+        <div class="title-area">
+            <div class="small-title">Thư Tình Gửi Em</div>
+            <h1>Một Món Quà Nho Nhỏ</h1>
+            <p id="hint">Nhấn vào phong bì để mở thư 💌</p>
+        </div>
+
+        <!-- Khung chứa cả phong bì và bức thư -->
+        <div class="envelope-container">
+            <!-- Bức thư (Đã tách rời khỏi phong bì để giấu 100%) -->
+            <div class="letter" id="letter">
+                <div class="letter-heart">💗</div>
+                <p class="letter-small">Một câu hỏi rất đơn giản...</p>
+                <h2>Em có đồng ý làm người yêu anh không?</h2>
+            </div>
+
+            <!-- Phong bì -->
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="seal">💌</div>
+            </div>
+        </div>
+
+        <div class="answer-area" id="answerArea">
+            <button class="yes-button" id="yesBtn">Đồng ý 💕</button>
+            <button class="no-button" id="noBtn">Không 😢</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
